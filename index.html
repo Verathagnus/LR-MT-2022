@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>TextSumEval-2022</title>
+      <title>Low-Resource MT-Shared Task-2022</title>
       <link rel="icon" type="image/png" href="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-paper-art-and-design-studio-xnimrodx-lineal-color-xnimrodx.png"/>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                <a class="navbar-brand" href="#">
-               <img src="images/logo.png" alt=""width="195" 
-                  height="60">
+<!--                <img src="images/logo.png" alt=""width="195" 
+                  height="60"> -->
                </a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -62,93 +62,10 @@
             <div class="card" style="width: 90%;">
                <div class="card-body">
                   <h2 class="text-center title-text">Abstract</h2>
-                  <p class="card-text" style="text-align: justify; padding: 0px 25px 25px 25px;">Automatic summarization is one of the most difficult tasks in Natural Language Processing as it requires a comprehensive understanding of input documents, identification of relevant content, and generation of a synthetic perspective of the document, often subject to a length constraint. Yet, this task is very important in the context of the deluge of varying quality information our generation has to tackle. Building better summarization systems requires progress in summarization evaluation metrics, which are used to assess the quality of the summaries they produce. There is two current trends to summarization evaluation: manual and automatic evaluation. Manual evaluation consists in ranking summaries or parts of summaries according to a set of factors such as faithfulness to the original, linguistic fluency. The automatic evaluation focuses more on comparing the system production to a set of human-authored summaries deemed a gold standard. Manual evaluation is more accurate but much more costly than automatic evaluation, and it is often not actionable in a machine learning environment (systems require rapid and repeated evaluation of their output in order to learn how to summarize). Current methods for automatic evaluation fail because they involve a too candid representation of meaning (through word n-grams for ROUGE, for example), a problem which has been identified as a major hurdle for the advancement of the field. So, the aim of this shared task is to design an automatic evaluation system for system generated summaries where the evaluation system will compare the test summaries with gold summaries and estimate their relevance in terms of BLUE, and ROUGE scores.</p>
+                  <p class="card-text" style="text-align: justify; padding: 0px 25px 25px 25px;">Machine translation (MT) performance has been improved significantly in the past few years Within the MT and NLP communities, English is by far the most resource-rich language. MT systems are most often trained to translate texts from and to English, or they use English as a source or target language to translate low-resource languages.  However, MT coverage for more users speaking diverse languages is limited by the fact the MT methods demand huge amounts of parallel data to train quality systems, which has posed a major obstacle for low resource translation. Therefore, developing MT systems with relatively small parallel datasets is still highly desirable in this shared task.  The main challenge here is how to efficiently utilize monolingual data or techniques such as multilingual, transfer learning to improve translation performance. Evaluation will be carried out using automatic evaluation metrics (BLEU, TER, RIBES) and human evaluation.</p>
                </div>
             </div>
          </center>
-      </section>
-
-<!-- Key steps -->
-      <section>
-         <div class="container py-2 mt-4 mb-4">
-         <h2 class="text-center title-text">Key Steps</h2>
-         <div class="row no-gutters">
-            <div class="col-sm">
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-               <div class="row h-50">
-                  <div class="col">&nbsp;</div>
-                  <div class="col">&nbsp;</div>
-               </div>
-               <h5 class="m-2">
-                  <span class="badge badge-pill bg-light border">&nbsp;</span>
-               </h5>
-               <div class="row h-50">
-                  <div class="col border-right">&nbsp;</div>
-                  <div class="col">&nbsp;</div>
-               </div>
-            </div>
-
-            <div class="col-sm py-2">
-               <div class="card">
-                  <div class="card-body">
-                     <h4 class="card-title">Input</h4>
-                     <p class="card-text">Test Summaries and Gold Summaries.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="row no-gutters">
-            <div class="col-sm py-2">
-               <div class="card">
-                  <div class="card-body">
-                     <h4 class="card-title">Evaluate</h4>
-                     <p class="card-text">An automatic evaluation system which compares the test summaries with gold summaries</p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-               <div class="row h-50">
-                  <div class="col border-right">&nbsp;</div>
-                  <div class="col">&nbsp;</div>
-               </div>
-               <h5 class="m-2">
-                  <span class="badge badge-pill bg-light border">&nbsp;</span>
-               </h5>
-               <div class="row h-50">
-                  <div class="col border-right">&nbsp;</div>
-                  <div class="col">&nbsp;</div>
-               </div>
-            </div>
-            <div class="col-sm">
-            </div>
-         </div>
-         <div class="row no-gutters">
-            <div class="col-sm">
-               <!--spacer--> 
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-               <div class="row h-50">
-                  <div class="col border-right">&nbsp;</div>
-                  <div class="col">&nbsp;</div>
-               </div>
-               <h5 class="m-2">
-                  <span class="badge badge-pill bg-light border">&nbsp;</span>
-               </h5>
-               <div class="row h-50">
-                  <div class="col border-right">&nbsp;</div>
-                  <div class="col">&nbsp;</div>
-               </div>
-            </div>
-            <div class="col-sm py-2">
-               <div class="card">
-                  <div class="card-body">
-                     <h4 class="card-title">Output</h4>
-                     <p>BLUE and ROUGE score for each test summary.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
       </section>
 
 <!-- Data download -->
@@ -316,9 +233,9 @@
                <div class="col-md-12 col-lg-9 mx-auto">
                   <div class="subscribe-inner text-center">
                      <h2>Contact Us</h2>
-                     <h5><i class="fa fa-phone" aria-hidden="true"> Pankaj Dadure: +91 95457 57478</i></h5>
+                     <h5><i class="fa fa-phone" aria-hidden="true"> Sahinur R. Laskar: <a href="tel:+917002460508">+91 70024 60508</a></i></h5>
                      <br>
-                     <a href="mailto:pankaj_rs@cse.nits.ac.in " class="get-btn">E-Mail Us</a>                        
+                     <a href="mailto:sahinur_rs@cse.nits.ac.in" class="get-btn">E-Mail Us</a>                        
                   </div>
                </div>
             </div>
